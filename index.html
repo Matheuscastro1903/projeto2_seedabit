@@ -13,8 +13,8 @@
         <div class="nav">
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre</a></li>
-                <li><a href="#">ODS</a></li>
+                <li><a href="#sobre_solucao">Sobre</a></li>
+                <li><a href="#ods">ODS</a></li>
                 <li><a href="#">Protótipo</a></li>
                 <li><a href="#">Blog</a></li>
             </ul>
@@ -23,18 +23,95 @@
     </header>   
 
     <main>
-      <section class="banner-localixo">
-        <div class="banner-content">
-            <h1>Localixo: A solução inteligente para o descarte irregular.</h1>
-            <a href="#" class="btn-cta">
-            Conheça nossa solução &gt;
-            </a>
+        <section class="banner-localixo">
+            <div class="banner-content">
+                <h1 >Localixo: A solução inteligente para o descarte irregular.</h1>
+                <a href="#" class="btn-cta">
+                Conheça nossa solução &gt;
+                </a>
+            </div>
+
+            <div class="pet-image">
+                <img src="./assets/pet.png" alt="Lixinho">
+            </div>
+        </section>
+    
+
+        <section id="sobre_solucao" class="sobre_solucao">
+        <div class="div-sobre">
+            <h1 class="h1-geral">Sobre a solução</h1>
+            
+
+            <div class="slideshow-container">
+
+
+                <button class="prev" type="button" onclick="plusSlides(-1)">&#10094;</button>
+                <!-- Cada bloco 'mySlides' representa uma foto individual -->
+                    
+                <div class="slides-content">
+
+                    <div class="mySlides-fade">
+                    <!-- Mostra o número do slide (1 de 3) -->
+                    <!--essa div controlará a imagem-->
+                    <!-- Imagem do slide, ocupa 100% da largura do container -->
+                        <img class="imagem-sobre" src="assets/carrosel_problema.png" >
+
+                    </div>
+
+                <!-- Segundo slide -->
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_solucao.png" ><!--essa div controlará a imagem-->
+                    </div> 
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_publico.png" ><!--essa div controlará a imagem-->
+                    </div>
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_inovacao.png" ><!--essa div controlará a imagem-->
+                    </div>
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_fundadores.png" ><!--essa div controlará a imagem-->
+                    </div>
+                    
+            </div>
+
+                
+                    
+                        
+                    
+                        
+                    <!-- Botão para avançar um slide -->
+                    <button class="next" type="button" onclick="plusSlides(1)">&#10095;</button>
+    
+                    
+
+                <!-- Quebra de linha para separar o slideshow dos pontos (dots) -->
+                    <br>
         </div>
 
-        <div class="pet-image">
-            <img src="./assets/pet.png" alt="Lixinho">
-        </div>
-    </section>
+        </section>
+
+        <section id="ods" class="section-ods">
+                    
+                    <div class="div-ods">
+                    <h1 class="h1-geral">ODS</h1>
+
+                    <img class="imagem-ods-esquerda" src="assets/ods_1.png" alt="">
+                    
+                    <img  class="imagem-ods-direita" src="assets/ods_2.png" alt="">
+
+                    
+                    <img  class="imagem-ods-esquerda" src="assets/ods_3.png" alt="">
+                    
+                    <img  class="imagem-ods-direita" src="assets/ods_4.png" alt="">
+                    </div>
+
+
+                
+        </section>
+
     </main>
     
     <footer class="site-footer">
@@ -67,5 +144,12 @@
     <div class="footer-bottom">
         <p>&copy; 2025 Localixo - Projeto Seed a Bit. Todos os direitos reservados.</p>
     </div>
-</footer>
+
+
+    </footer>
+
+<script src="js/carrossel.js"></script>
+
+
+
 </body>

@@ -40,7 +40,7 @@ body {
 
 .logo img {
 
-    height: 50px; 
+    height: 100px; 
     margin-top: 10px;
 
 }
@@ -59,6 +59,7 @@ body {
     display: flex; 
 
     gap: 30px;
+    font-size: 30px;
 
 }
 
@@ -80,7 +81,7 @@ body {
 
             width: 100%;
 
-            height: 600px;
+            height: 1400px;
 
             background-image: url('./assets/Banner.png'); 
 
@@ -105,6 +106,7 @@ body {
             text-align: left; 
 
             max-width: 40%;
+            
 
             padding: 0;
             margin-left: 400px;
@@ -147,7 +149,7 @@ body {
 
             font-family: 'Poppins', sans-serif;
 
-            font-size: 1em;
+            font-size: 30px;
 
             font-weight: 500;
 
@@ -169,7 +171,7 @@ body {
 
     .pet-image {
 
-    width: 600px; 
+    width: 800px; 
 
     height: auto;
 
@@ -187,6 +189,153 @@ body {
 
     object-fit: cover; 
 
+}
+
+
+
+
+/*css da parte "Sobre a solução"*/
+
+.div-sobre{
+    width: 100%;
+    height: 1400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F4F1EA;
+}
+
+.h1-geral{
+    margin: 50px;
+    font-size: 60px;
+}
+
+
+
+
+.imagem-sobre{
+    margin-top: 200px;
+    width: 500px;
+    height: 650px;
+    border-radius: 15px;
+}
+
+/*estilizando os botões*/
+/* 
+Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
+Os estilos aqui são aplicados a ambos ao mesmo tempo
+*/
+
+/* 
+Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
+Os estilos aqui são aplicados a ambos ao mesmo tempo
+*/
+
+
+/*códigos para fazer o slideshow*/
+
+.slideshow-container{
+    display: flex;
+    flex-direction: row  /*permite que o que estiver dentro da div slideshow fique em linha*/
+    
+}
+
+button.prev, button.next {
+  
+  /* Remove a cor de fundo padrão do botão HTML */
+  margin: 10px;
+  background:none;
+
+  /* Remove a borda padrão dos botões */
+  border: none;
+
+  /* Muda o cursor para a "mãozinha" ao passar por cima (indicando que é clicável) */
+  cursor: pointer;
+    
+  
+  
+
+  /* Coloca o botão verticalmente no meio do container */
+  top: 50%;
+
+  /* Move o botão para cima metade da sua própria altura 
+     (para centralizá-lo de forma exata no meio vertical) */
+  
+
+  /* Define a cor do texto (ou do ícone da seta) como branca */
+  color: rgb(0, 0, 0);
+
+  /* Aumenta o tamanho da fonte (ou seta) para deixá-la mais visível */
+  font-size: 50px;
+  margin-top: 40px;
+}
+
+/* Esconde todos os slides por padrão */
+.mySlides-fade {
+    display: none; /* Faz todos os slides ficarem invisíveis inicialmente */
+}
+
+/* Mostra apenas o primeiro slide inicialmente */
+.slideshow-container  .mySlides-fade:first-child{
+    display: block; /* Apenas o PRIMEIRO slide fica visível quando a página carrega */
+}
+
+/* Efeito de transição fade */
+.fade {
+    animation-name: fade; /* Nome da animação que será usada */
+    animation-duration: 1.5s; /* A transição dura 1.5 segundos */
+}
+
+
+
+
+
+/*
+css das ods*/
+
+.section-ods {
+  width: 100%;
+  padding: 40px 20px;
+  background-color: #f8f9fa; /* ajuste conforme necessário */
+}
+
+.div-ods {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza o h1 e imagens por padrão */
+  gap: 30px; /* espaço entre os elementos */
+  
+  margin: 0 auto;
+}
+
+.h1-geral {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 2.5rem;
+  width: 100%;
+}
+
+/* Estilo base para todas as imagens */
+.imagem-ods-esquerda,
+.imagem-ods-direita {
+  max-width: 600px; /* ajuste conforme necessário */
+  width: 90%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Alinha à esquerda */
+.imagem-ods-esquerda {
+  align-self: flex-start;
+  margin-left: 5%;
+}
+
+/* Alinha à direita */
+.imagem-ods-direita {
+  align-self: flex-end;
+  margin-right: 5%;
 }
 
 /* --- Estilos do Footer --- */
