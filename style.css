@@ -188,6 +188,43 @@ body {
     object-fit: cover; 
 
 }
+.ods h1
+{
+    text-align: center;
+    padding: 50px;
+}
+
+.card
+{
+display: flex;
+  border: 1px solid #ddd; 
+  border-radius: 8px; 
+  width: 700px; 
+  margin: 20px auto; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.card p {
+    text-align: center;
+    width: 70px; 
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.card img {
+
+  border-radius: 8px; */
+  
+  width: 150px; 
+  
+  height: 150px; 
+
+  display: block;
+}
 
 /* --- Estilos do Footer --- */
 
