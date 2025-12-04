@@ -290,39 +290,77 @@ button.prev, button.next {
 
 
 
-/*
-css das ods*/
-
+/* css das ods */
 .section-ods {
   width: 100%;
-  height: 1450px;
-  
-  background-color: #106ac4; /* ajuste conforme necessário */
+  min-height: 1450px; 
+  background-color: #106ac4;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 0;
 }
 
 .div-ods {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza o h1 e imagens */
-   /* espaço entre os elementos */
+  align-items: center;
   max-width: 1200px;
-  
-  
+  width: 100%;
+  gap: 60px; 
 }
 
 .h1-geral {
   text-align: center;
-  margin-bottom: 20px;
-  color: #000000;
+  margin: 40px; 
+  color: #000000; 
   font-size: 60px;
   width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 
+.imagem-ods-esquerda,
+.imagem-ods-direita {
+  width: 800px; 
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Efeito  para interatividade */
+.imagem-ods-esquerda:hover,
+.imagem-ods-direita:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* ALINHAMENTO À ESQUERDA */
+.imagem-ods-esquerda {
+  align-self: flex-start; 
+  margin-left: 50px; 
+}
+
+/* ALINHAMENTO À DIREITA */
+.imagem-ods-direita {
+  align-self: flex-end; 
+  margin-right: 50px; 
+}
+
+
+/*parte do protótpio*/
+
+.div-prototipo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.imagem-prototipo{
+    margin: 40px;
+}
 
 
 
