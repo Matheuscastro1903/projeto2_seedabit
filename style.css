@@ -295,48 +295,36 @@ css das ods*/
 
 .section-ods {
   width: 100%;
-  padding: 40px 20px;
-  background-color: #f8f9fa; /* ajuste conforme necessário */
+  height: 1450px;
+  
+  background-color: #106ac4; /* ajuste conforme necessário */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .div-ods {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza o h1 e imagens por padrão */
-  gap: 30px; /* espaço entre os elementos */
+  align-items: center; /* centraliza o h1 e imagens */
+   /* espaço entre os elementos */
+  max-width: 1200px;
   
-  margin: 0 auto;
+  
 }
 
 .h1-geral {
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
-  font-size: 2.5rem;
+  color: #000000;
+  font-size: 60px;
   width: 100%;
 }
 
-/* Estilo base para todas as imagens */
-.imagem-ods-esquerda,
-.imagem-ods-direita {
-  max-width: 600px; /* ajuste conforme necessário */
-  width: 90%;
-  height: auto;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
 
-/* Alinha à esquerda */
-.imagem-ods-esquerda {
-  align-self: flex-start;
-  margin-left: 5%;
-}
 
-/* Alinha à direita */
-.imagem-ods-direita {
-  align-self: flex-end;
-  margin-right: 5%;
-}
+
+
 
 /* --- Estilos do Footer --- */
 
