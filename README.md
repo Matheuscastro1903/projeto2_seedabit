@@ -5,7 +5,7 @@
 Este é o repositório da Landing Page do LocaLixo, nosso projeto de desenvolvimento web. A página serve para apresentar o LocaLixo, que é uma plataforma focada em:
 
 *   Organizar mutirões de limpeza.
-*   Permitir a denúncia de lixo irregular por fotos.
+*   Receber a denúncia de lixo irregular, via formulário.
 *   Visualizar tudo em um mapa inteligente.
 *   Conectar a comunidade com amigos e uma área de educação sobre reciclagem.
 
