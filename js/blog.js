@@ -1,57 +1,96 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const postForm = document.getElementById('post-form');
-    const postsContainer = document.getElementById('blog-posts');
+// Configuração da API
+const API_URL = "https://blog-api.seedabit.org.br/api/posts";
+const API_KEY = "group-1-d6ukofxm"; // SUBSTITUA pela sua chave
 
-    loadPosts();
-
-    postForm.addEventListener('submit', (e) => {
-        e.preventDefault(); 
-
-        const title = document.getElementById('title').value;
-        const author = document.getElementById('author').value;
-        const content = document.getElementById('content').value;
-
-        if (title && author && content) {
-            const post = {
-                id: Date.now(),
-                title: title,
-                author: author,
-                content: content,
-                date: new Date().toLocaleDateString('pt-BR')
-            };
-
-            savePost(post);
-            addPostToDOM(post);
-            postForm.reset();
-        }
+// GET - Buscar posts
+async function getPosts() {
+  try {
+    const response = await fetch(API_URL, {
+      method: "GET",
+      headers: {
+        "x-api-key": API_KEY,
+      },
     });
 
-    function addPostToDOM(post) {
-        const postElement = document.createElement('div');
-        postElement.classList.add('post-card');
-        
-        postElement.innerHTML = `
-            <div class="post-header">
-                <h3>${post.title}</h3>
-                <span class="post-date">${post.date}</span>
-            </div>
-            <p class="post-author">Por: <strong>${post.author}</strong></p>
-            <p class="post-content">${post.content}</p>
-        `;
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
 
-        postsContainer.prepend(postElement);
-    }
+    const posts = await response.json();
+    displayPosts(posts);
+  } catch (error) {
+    console.error("Erro:", error);
+    document.getElementById("blog-posts").innerHTML =
+      '<p class="error">Erro ao carregar posts.</p>';
+  }
+}
 
-    function savePost(post) {
-        // Busca os posts existentes no "banco de dados" do navegador ou cria um array vazio
-        let posts = JSON.parse(localStorage.getItem('localixo_posts')) || [];
-        posts.push(post);
-        // Converte o array para texto JSON e salva no navegador sob a chave 'localixo_posts'
-        localStorage.setItem('localixo_posts', JSON.stringify(posts));
-    }
+// POST - Criar post
+async function createPost(data) {
+  try {
+    const response = await fetch(API_URL, {
+      method: "POST",
+      headers: {
+        "x-api-key": API_KEY,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    function loadPosts() {
-        let posts = JSON.parse(localStorage.getItem('localixo_posts')) || [];
-        posts.forEach(post => addPostToDOM(post));
-    }
+    if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+
+    const newPost = await response.json();
+    alert("Post criado com sucesso!");
+
+    getPosts();
+
+    // Atualiza a lista
+    return newPost;
+  } catch (error) {
+    console.error("Erro:", error);
+    alert("Erro ao criar post. Tente novamente.");
+  }
+}
+
+// Exibir posts na página
+function displayPosts(posts) {
+  const container = document.getElementById("blog-posts");
+
+  if (posts.length === 0) {
+    container.innerHTML = "<p>Nenhum post encontrado.</p>";
+    return;
+  }
+
+  container.innerHTML = posts
+    .map(
+      (post) => `
+        <article class="post">
+            <h3>${post.title}</h3>
+            <p class="meta">Por ${post.author} em ${new Date(
+        post.createdAt
+      ).toLocaleDateString()}</p>
+            <p>${post.content}</p>
+        </article>
+    `
+    )
+    .join("");
+}
+
+// Event listener do formulário
+document.getElementById("post-form").addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    title: document.getElementById("title").value.trim(),
+    content: document.getElementById("content").value.trim(),
+    author: document.getElementById("author").value.trim(),
+  };
+
+  if (formData.title && formData.content && formData.author) {
+    await createPost(formData);
+    e.target.reset();
+  } else {
+    alert("Preencha todos os campos!");
+  }
 });
+
+// Carregar posts ao abrir a página
+getPosts();

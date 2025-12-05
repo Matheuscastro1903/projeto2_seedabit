@@ -60,7 +60,7 @@ body {
 .banner-localixo {
   width: 100%;
 
-  min-height: 110vh;
+  min-height: 100vh;
 
   background-image: url("./assets/Banner.png");
 
@@ -292,9 +292,12 @@ button.next {
 }
 
 .imagem-prototipo {
-  margin: 40px;
+  margin: 20px;
+  max-width: 90%; /* Garante responsividade */
+  height: auto;
+  border-radius: 20px; /* Deixa mais parecido com celular */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra elegante */
 }
-
 /* --- Estilos do Footer --- */
 
 .site-footer {
