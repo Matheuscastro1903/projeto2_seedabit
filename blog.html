@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<head>
+  <title>Localixo - Blog Comunitário</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">
+      <img src="./assets/logo.png" alt="Logo do Site" />
+    </div>
+
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="index.html#sobre-solucao">Sobre</a></li>
+        <li><a href="index.html#ods">ODS</a></li>
+        <li><a href="index.html#prototipo">Protótipo</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- Blog comunitário -->
+    <section id="blog" class="blog-section">
+      <h1 class="h1-geral">Blog Comunitário</h1>
+
+      <div class="blog-form-container">
+        <h3>Criar nova postagem</h3>
+        <form id="post-form">
+          <input type="text" id="title" placeholder="Título do post" required />
+          <input type="text" id="author" placeholder="Seu nome" required />
+          <textarea
+            id="content"
+            placeholder="Conteúdo da mensagem"
+            required
+          ></textarea>
+          <button type="submit" class="btn-cta">Publicar</button>
+        </form>
+      </div>
+
+      <div id="blog-posts" class="posts-container"></div>
+    </section>
+    <script src="js/blog.js"></script>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <div class="footer-col about">
+        <img src="./assets/logo.png" alt="Localixo Logo" class="footer-logo" />
+        <p>
+          Conectando cidadãos para transformar o Recife em uma cidade mais limpa
+          e consciente.
+        </p>
+      </div>
+
+      <div class="footer-col links">
+        <h3>Links Rápidos</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="index.html#sobre-solucao">Sobre</a></li>
+          <li><a href="index.html#ods">ODS</a></li>
+          <li><a href="blog.html">Blog</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col ods-section">
+        <h3>Nós apoiamos</h3>
+        <div class="ods-gallery">
+          <img src="./assets/ods_icon_1.png" alt="Agua potável e saneamento" />
+          <img src="./assets/ods_icon_2.png" alt="Vida na água" />
+          <img src="./assets/ods_icon_3.png" alt="Comunidades sustentáveis" />
+          <img src="./assets/ods_icon_4.png" alt="Vida terrestre" />
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>
+        &copy; 2025 Localixo - Projeto Seed a Bit. Todos os direitos reservados.
+      </p>
+    </div>
+  </footer>
+</body>
