@@ -1,39 +1,45 @@
-# LocaLixo: A Solução Inteligente para o Descarte Irregular
+# LocaLixo: Landing Page
 
-![Status do Projeto](https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow)
+## 📝 Sobre o Projeto
 
-## 📝 Descrição do Projeto
+Este é o repositório da Landing Page do LocaLixo, nosso projeto de desenvolvimento web. A página serve para apresentar o LocaLixo, que é uma plataforma focada em:
 
-O **LocaLixo** é um projeto de desenvolvimento web focado em promover a limpeza urbana e a conscientização ambiental. Nossa missão é conectar cidadãos e oferecer ferramentas eficazes para combater o descarte irregular de lixo nas ruas.
+*   Organizar mutirões de limpeza.
+*   Permitir a denúncia de lixo irregular por fotos.
+*   Visualizar tudo em um mapa inteligente.
+*   Conectar a comunidade com amigos e uma área de educação sobre reciclagem.
 
-Este repositório contém a **Landing Page** oficial do LocaLixo, que serve como uma apresentação informativa e visual do projeto principal, suas funcionalidades e objetivos.
+> **Status Atual:** Finalizado.
 
-## ✨ Funcionalidades do LocaLixo (Projeto Principal)
+## 🔗 Links Importantes
 
-O LocaLixo oferece uma plataforma robusta com as seguintes funcionalidades principais:
+| Recurso | Status | Link |
+| :--- | :--- | :--- |
+| **Protótipo (Figma)** | Visualização | [Acessar Protótipo](https://www.figma.com/design/z9z9cNPT7tuLpVkuTYgoAH/Prototipa%C3%A7%C3%A3o---Grupo-1?node-id=17-871&t=TMZzsOgfc6dxaOsr-1) |
+| **Site Publicado** | Pendente | *Ainda não hospedado.* |
 
-*   **Mutirões de Limpeza:** Possibilidade de organizar e participar de mutirões de limpeza, com visualização em um mapa inteligente.
-*   **Denúncia de Lixo Irregular:** Ferramenta para denunciar pontos de descarte irregular por meio de fotos, contribuindo para a manutenção da cidade.
-*   **Mapa Inteligente:** Visualização em tempo real dos mutirões ativos e dos pontos de descarte denunciados.
-*   **Conexão Social:** Recurso para adicionar amigos e engajar a comunidade na causa ambiental.
-*   **Área de Educação:** Conteúdo informativo e educativo sobre reciclagem e meio ambiente.
+## ⚙️ Integração do Blog
 
-## 💻 Tecnologias Utilizadas (Landing Page)
+O blog da nossa Landing Page é totalmente funcional e integrado a uma API externa para gerenciamento de posts.
 
-A Landing Page foi desenvolvida utilizando tecnologias web padrão, garantindo leveza e compatibilidade:
+### Como Funciona
 
-*   **HTML5:** Estrutura semântica do conteúdo.
-*   **CSS3:** Estilização e design responsivo.
-*   **JavaScript:** Interatividade, incluindo a funcionalidade do blog e o carrossel de slides.
+A integração é feita via JavaScript (`js/blog.js`) que se comunica com a API para buscar e criar novas postagens.
 
-## 🚀 Como Rodar a Landing Page Localmente
+### Endpoints Utilizados
+| Ação | Método | Endpoint | Descrição |
+| :--- | :--- | :--- | :--- |
+| **Buscar Posts** | `GET` | `/api/posts` | Lista todos os posts do blog. |
+| **Criar Novo Post** | `POST` | `/api/posts` | Envia um novo post para a API. |
 
-A Landing Page do LocaLixo é um projeto estático e não requer um servidor web complexo ou instalação de dependências.
+## 💻 Tecnologias
 
-1.  **Clone o repositório** (ou descompacte o arquivo do projeto).
-2.  **Abra o arquivo `index.html`** diretamente no seu navegador de preferência (Chrome, Firefox, Edge, etc.).
+A Landing Page é um projeto construído com:
 
-O projeto estará acessível e pronto para visualização.
+*   HTML5
+*   CSS3
+*   JavaScript
 
----
-*Este projeto está em fase de desenvolvimento, com previsão de conclusão para amanhã.*
+## 🚀 Como Rodar Localmente
+
+Basta descompactar o projeto e abrir o arquivo `index.html` no seu navegador. Não é necessário instalar dependências.
