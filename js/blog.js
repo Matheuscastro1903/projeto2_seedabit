@@ -1,6 +1,6 @@
 // Configuração da API
 const API_URL = "https://blog-api.seedabit.org.br/api/posts";
-const API_KEY = "group-1-d6ukofxm"; // SUBSTITUA pela sua chave
+const API_KEY = "coloque a API da gente"; // SUBSTITUA pela sua chave
 
 // GET - Buscar posts
 async function getPosts() {
@@ -94,3 +94,4 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
 
 // Carregar posts ao abrir a página
 getPosts();
+
