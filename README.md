@@ -5,8 +5,8 @@
 Este é o repositório da Landing Page do LocaLixo, nosso projeto de desenvolvimento web. A página serve para apresentar o LocaLixo, que é uma plataforma focada em:
 
 - Organizar mutirões de limpeza.
-- Receber a denúncia de lixo irregular, via formulário.
-- Visualizar tudo em um mapa inteligente.
+- Receber a denúncia de lixo irregular, onde o usuário envia por um formulário.
+- Visualizar tudo em um mapa inteligente, no qual pode ver multirões e locais de coleta.
 - Conectar a comunidade com amigos e uma área de educação sobre reciclagem.
 
 > **Status Atual:** Finalizado.
@@ -16,8 +16,7 @@ Este é o repositório da Landing Page do LocaLixo, nosso projeto de desenvolvim
 | Recurso               | Status       | Link                                                                                                                                          |
 | :-------------------- | :----------- | :-------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Protótipo (Figma)** | Visualização | [Acessar Protótipo](https://www.figma.com/design/z9z9cNPT7tuLpVkuTYgoAH/Prototipa%C3%A7%C3%A3o---Grupo-1?node-id=17-871&t=TMZzsOgfc6dxaOsr-1) |
-| **Site Publicado**    | Pendente     | _Ainda não hospedado._                                                                                                                        |
-
+| **Site Publicado**    | Pendente     | [Acessar o Site](https://matheuscastro1903.github.io/projeto2_seedabit)|
 ## ⚙️ Integração do Blog
 
 O blog da nossa Landing Page é totalmente funcional e integrado a uma API externa para gerenciamento de posts.
@@ -32,7 +31,7 @@ A integração é feita via JavaScript (`js/blog.js`) que se comunica com a API 
 | :------------------ | :----- | :----------- | :------------------------------ |
 | **Buscar Posts**    | `GET`  | `/api/posts` | Lista todos os posts do blog.   |
 | **Criar Novo Post** | `POST` | `/api/posts` | Envia um novo post para a API.  |
-| **Deletar Post**     | `DELETE` | `/api/posts/{id}` | Deleta um post especifico da API|
+| **Deletar Post**    | `DELETE` | `/api/posts/{id}` | Deleta um post especifico da API|
 
 ## 💻 Tecnologias
 
