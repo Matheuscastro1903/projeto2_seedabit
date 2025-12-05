@@ -1,27 +1,90 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Blog - CapacitaBR</title>
-  </head>
-  <body>
-    <!-- Formulário para criar post -->
-    <section id="criar-post">
-      <h2>Criar Novo Post</h2>
-      <form id="post-form">
-        <input type="text" id="title" placeholder="Título" required />
-        <textarea id="content" placeholder="Conteúdo" required></textarea>
-        <input type="text" id="author" placeholder="Autor" required />
-        <button type="submit">Publicar</button>
-      </form>
-    </section>
+<head>
+    <title>Localixo</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+    <header class="header">     
 
-    <!-- Lista de posts -->
-    <section id="blog">
-      <h2>Posts Recentes</h2>
-      <div id="blog-posts"></div>
-    </section>
+        <div class="logo">
+            <img src="./assets/logo.png" alt="Logo do Site">
+        </div>
 
-    <script src="blog.js"></script>
-  </body>
-</html>
+        <div class="nav">
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">ODS</a></li>
+                <li><a href="#">Protótipo</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
+        </div>
+
+    </header>   
+
+    <main>
+      <section class="banner-localixo">
+        <div class="banner-content">
+            <h1>Localixo: A solução inteligente para o descarte irregular.</h1>
+            <a href="#" class="btn-cta">
+            Conheça nossa solução &gt;
+            </a>
+        </div>
+
+        <div class="pet-image">
+            <img src="./assets/pet.png" alt="Lixinho">
+        </div>
+    </section>
+    <section class = "ods"> 
+        <h1>ODS</h1>
+        <div class="card ods6">
+            <img src="./assets/ods6.png"> 
+            <p>O lixo contamina rios e lençóis freáticos, tornando a água imprópria para o consumo humano.</p>
+        </div>
+        <div class="card ods11">
+            <p>Lixo nas ruas entope bueiros, causando enchentes que destroem cidades e espalham doenças.</p>
+            <img src="./assets/ods11.png">
+        </div>
+        <div class="card ods14">
+            <img src="./assets/ods14.jpg">
+            <P>Animais marinhos confundem plásticos com comida, morrendo por asfixia ou intoxicação.</P>
+        </div>
+        <div class="card ods15">
+            <p>O chorume dos lixões envenena o solo, mata a vegetação e atrai animais transmissores de doenças.</p>
+            <img src="./assets/ods15.png">
+        </div>
+    </section>
+    </main>
+    
+    <footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-col about">
+            <img src="./assets/logo.png" alt="Localixo Logo" class="footer-logo">
+            <p>Conectando cidadãos para transformar o Recife em uma cidade mais limpa e consciente.</p>
+        </div>
+
+        <div class="footer-col links">
+            <h3>Links Rápidos</h3>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Sobre o Projeto</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col ods-section">
+            <h3>Nós apoiamos</h3>
+            <div class="ods-gallery">
+                <img src="./assets/ods13.png" alt="Ação contra a mudança global do clima">
+                <img src="./assets/ods14.jpg" alt="Vida na água">
+                <img src="./assets/ods15.png" alt="Vida terrestre">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2025 Localixo - Projeto Seed a Bit. Todos os direitos reservados.</p>
+    </div>
+</footer>
+</body>
