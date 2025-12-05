@@ -28,10 +28,12 @@ A integração é feita via JavaScript (`js/blog.js`) que se comunica com a API 
 
 ### Endpoints Utilizados
 
-| Ação                | Método | Endpoint     | Descrição                      |
-| :------------------ | :----- | :----------- | :----------------------------- |
-| **Buscar Posts**    | `GET`  | `/api/posts` | Lista todos os posts do blog.  |
-| **Criar Novo Post** | `POST` | `/api/posts` | Envia um novo post para a API. |
+| Ação                | Método | Endpoint     | Descrição                       |
+| :------------------ | :----- | :----------- | :------------------------------ |
+| **Buscar Posts**    | `GET`  | `/api/posts` | Lista todos os posts do blog.   |
+| **Criar Novo Post** | `POST` | `/api/posts` | Envia um novo post para a API.  |
+| **Delete Post**     | `POST` | `/api/posts` | Deleta um post especifico da API|
+
 
 ## 💻 Tecnologias
 
