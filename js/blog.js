@@ -1,6 +1,6 @@
 // Configuração da API
 const API_URL = "https://blog-api.seedabit.org.br/api/posts";
-const API_KEY = "coloque a API da gente"; // SUBSTITUA pela sua chave
+const API_KEY = "group-1-d6ukofxm"; // Chave da API fornecida pelo usuário
 
 // GET - Buscar posts
 async function getPosts() {
@@ -50,7 +50,34 @@ async function createPost(data) {
   }
 }
 
-// Exibir posts na página
+// DELETE - Deletar post
+async function deletePost(postId) {
+    try {
+        const response = await fetch(`${API_URL}/${postId}`, {
+            method: 'DELETE',
+            headers: {
+                'x-api-key': API_KEY,
+                'accept': '*/*'
+            }
+        });
+
+        if (!response.ok) {
+            throw new Error(`Erro: ${response.status}`);
+        }
+
+        console.log('Post deletado com sucesso!');
+        alert('Post deletado com sucesso!');
+
+			// Atualizar a lista de posts
+			getPosts();
+
+    } catch (error) {
+        console.error('Erro ao deletar post:', error);
+        alert('Erro ao deletar post. Tente novamente.');
+    }
+}
+
+// Exibir posts na página (Atualizada para incluir o botão de delete)
 function displayPosts(posts) {
   const container = document.getElementById("blog-posts");
 
@@ -68,6 +95,7 @@ function displayPosts(posts) {
         post.createdAt
       ).toLocaleDateString()}</p>
             <p>${post.content}</p>
+            <button class="btn-delete" onclick="deletePost('${post.id}')">🗑️ Deletar</button>
         </article>
     `
     )
@@ -94,4 +122,3 @@ document.getElementById("post-form").addEventListener("submit", async (e) => {
 
 // Carregar posts ao abrir a página
 getPosts();
-
