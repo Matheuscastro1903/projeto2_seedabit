@@ -1,223 +1,168 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
 
-*{
-    margin: 0px;
-    padding: 0;
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0px;
+  padding: 0;
 }
 
 body {
-    
-    font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
-
-
 
 .header {
+  top: 0;
 
-    top: 0;
+  left: 0;
 
-    left: 0;
+  width: 100%;
 
-    width: 100%;
+  display: flex;
 
-    display: flex;
+  justify-content: space-between;
 
-    justify-content: space-between; 
+  align-items: center;
 
-    align-items: center; 
+  background-color: #ffffff;
 
-    
-
-    background-color: #ffffff;
-
-    z-index: 100;
-    background-color: #ffffff;
-
+  z-index: 100;
 }
-
-
 
 .logo img {
-
-    height: 100px; 
-    margin-top: 10px;
-
+  height: 100px;
+  margin-top: 10px;
 }
 
-
-
-.nav{
-    margin-right: 50px;
-    
+.nav {
+  margin-right: 50px;
 }
 
 .nav ul {
+  list-style: none;
 
-    list-style: none;
+  display: flex;
 
-    display: flex; 
-
-    gap: 30px;
-    font-size: 30px;
-
+  gap: 30px;
+  font-size: 30px;
 }
-
-
 
 .nav ul a {
+  text-decoration: none;
 
-    text-decoration: none; 
+  color: #0095ff;
 
-    color: #0095FF; 
-
-    font-weight: 600;
-
+  font-weight: 600;
 }
-
-
 
 .banner-localixo {
+  width: 100%;
 
-            width: 100%;
+  min-height: 100vh;
 
-            height: 1400px;
+  background-image: url("./assets/Banner.png");
 
-            background-image: url('./assets/Banner.png'); 
+  background-size: cover;
 
-            background-size: cover;
+  background-position: center;
 
-            background-position: center;
+  display: flex;
 
-            display: flex;
+  align-items: center;
 
-            align-items: center; 
-
-            justify-content: flex-start; 
-            
-            
-
-        }
-
-
-
-        .banner-content {
-
-            text-align: left; 
-
-            max-width: 40%;
-            
-
-            padding: 0;
-            margin-left: 400px;
-
-        }
-
-
-
-        .banner-localixo h1 {
-
-            font-family: 'Poppins', sans-serif;
-
-            color: #FFFFFF;
-
-            font-size: 2.5em;
-
-            font-weight: 600;
-
-            line-height: 1.3;
-
-            margin-bottom: 30px;
-
-        }
-
-
-
-        .btn-cta {
-
-            background-color: #008080;
-
-            color: #FFFFFF;
-
-            display: inline-block;
-
-            padding: 15px 30px;
-
-            border-radius: 30px;
-
-            text-decoration: none;
-
-            font-family: 'Poppins', sans-serif;
-
-            font-size: 30px;
-
-            font-weight: 500;
-
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-
-        }
-
-
-
-        .btn-cta:hover {
-
-            background-color: #009999;
-
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
-
-        }
-
-
-
-    .pet-image {
-
-    width: 800px; 
-
-    height: auto;
-
-    overflow: hidden; 
-
-    }
-
-
-
-    .pet-image img {
-
-    width: 100%;
-
-    height: auto;
-
-    object-fit: cover; 
-
+  justify-content: flex-start;
 }
 
+.banner-content {
+  text-align: left;
 
+  max-width: 45%;
 
+  padding: 0;
+  margin-left: 200px;
+}
+
+.banner-localixo h1 {
+  font-family: "Poppins", sans-serif;
+
+  color: #ffffff;
+
+  font-size: 2.5em;
+
+  font-weight: 600;
+
+  line-height: 1.3;
+
+  margin-bottom: 30px;
+}
+
+.btn-cta {
+  background-color: #008080;
+
+  color: #ffffff;
+
+  display: inline-block;
+
+  padding: 15px 30px;
+
+  border-radius: 30px;
+
+  text-decoration: none;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 30px;
+
+  font-weight: 500;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.btn-cta:hover {
+  background-color: #009999;
+
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.4);
+}
+
+.pet-image {
+  width: 800px;
+
+  height: auto;
+
+  overflow: hidden;
+}
+
+.pet-image img {
+  width: 100%;
+
+  height: auto;
+
+  object-fit: cover;
+}
 
 /*css da parte "Sobre a solução"*/
 
-.div-sobre{
-    width: 100%;
-    height: 1400px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: #F4F1EA;
+.div-sobre {
+  width: 100%;
+  height: 1400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f4f1ea;
 }
 
-.h1-geral{
-    margin: 50px;
-    font-size: 60px;
+.h1-geral {
+  margin: 50px;
+  font-size: 60px;
 }
 
-
-
-
-.imagem-sobre{
-    margin-top: 200px;
-    width: 500px;
-    height: 650px;
-    border-radius: 15px;
+.imagem-sobre {
+  margin-top: 200px;
+  width: 500px;
+  height: 650px;
+  border-radius: 15px;
 }
 
 /*estilizando os botões*/
@@ -231,36 +176,30 @@ Seleciona ambos os botões — o "anterior" (.prev) e o "próximo" (.next)
 Os estilos aqui são aplicados a ambos ao mesmo tempo
 */
 
-
 /*códigos para fazer o slideshow*/
 
-.slideshow-container{
-    display: flex;
-    flex-direction: row  /*permite que o que estiver dentro da div slideshow fique em linha*/
-    
+.slideshow-container {
+  display: flex;
+  flex-direction: row; /*permite que o que estiver dentro da div slideshow fique em linha*/
 }
 
-button.prev, button.next {
-  
+button.prev,
+button.next {
   /* Remove a cor de fundo padrão do botão HTML */
   margin: 10px;
-  background:none;
+  background: none;
 
   /* Remove a borda padrão dos botões */
   border: none;
 
   /* Muda o cursor para a "mãozinha" ao passar por cima (indicando que é clicável) */
   cursor: pointer;
-    
-  
-  
 
   /* Coloca o botão verticalmente no meio do container */
   top: 50%;
 
   /* Move o botão para cima metade da sua própria altura 
      (para centralizá-lo de forma exata no meio vertical) */
-  
 
   /* Define a cor do texto (ou do ícone da seta) como branca */
   color: rgb(0, 0, 0);
@@ -272,60 +211,93 @@ button.prev, button.next {
 
 /* Esconde todos os slides por padrão */
 .mySlides-fade {
-    display: none; /* Faz todos os slides ficarem invisíveis inicialmente */
+  display: none; /* Faz todos os slides ficarem invisíveis inicialmente */
 }
 
 /* Mostra apenas o primeiro slide inicialmente */
-.slideshow-container  .mySlides-fade:first-child{
-    display: block; /* Apenas o PRIMEIRO slide fica visível quando a página carrega */
+.slideshow-container .mySlides-fade:first-child {
+  display: block; /* Apenas o PRIMEIRO slide fica visível quando a página carrega */
 }
 
 /* Efeito de transição fade */
 .fade {
-    animation-name: fade; /* Nome da animação que será usada */
-    animation-duration: 1.5s; /* A transição dura 1.5 segundos */
+  animation-name: fade; /* Nome da animação que será usada */
+  animation-duration: 1.5s; /* A transição dura 1.5 segundos */
 }
 
-
-
-
-
-/*
-css das ods*/
-
+/* css das ods */
 .section-ods {
   width: 100%;
-  height: 1450px;
-  
-  background-color: #106ac4; /* ajuste conforme necessário */
+  min-height: 1450px;
+  background-color: #106ac4;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 60px 0;
 }
 
 .div-ods {
   display: flex;
   flex-direction: column;
-  align-items: center; /* centraliza o h1 e imagens */
-   /* espaço entre os elementos */
+  align-items: center;
   max-width: 1200px;
-  
-  
+  width: 100%;
+  gap: 60px;
 }
 
 .h1-geral {
   text-align: center;
-  margin-bottom: 20px;
+  margin: 40px;
   color: #000000;
   font-size: 60px;
   width: 100%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
+.imagem-ods-esquerda,
+.imagem-ods-direita {
+  max-width: 100%;
+  width: 800px;
+  height: auto;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
+/* Efeito  para interatividade */
+.imagem-ods-esquerda:hover,
+.imagem-ods-direita:hover {
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+}
 
+/* ALINHAMENTO À ESQUERDA */
+.imagem-ods-esquerda {
+  align-self: flex-start;
+  margin-left: 50px;
+}
 
+/* ALINHAMENTO À DIREITA */
+.imagem-ods-direita {
+  align-self: flex-end;
+  margin-right: 50px;
+}
 
+/*parte do protótpio*/
 
+.div-prototipo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagem-prototipo {
+  margin: 20px;
+  max-width: 90%; /* Garante responsividade */
+  height: auto;
+  border-radius: 20px; /* Deixa mais parecido com celular */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Sombra elegante */
+}
 /* --- Estilos do Footer --- */
 
 .site-footer {
@@ -337,86 +309,93 @@ css das ods*/
 }
 
 .footer-container {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 50px;
-    gap: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 50px;
+  gap: 30px;
 }
 
 .footer-col {
-    flex: 1;
-    min-width: 250px;
+  flex: 1;
+  min-width: 250px;
 }
 
 .footer-logo {
-    height: 50px;
-    margin-bottom: 15px;
-    background-color: #ffffff;
-    padding: 5px;
-    border-radius: 8px;
+  height: 50px;
+  margin-bottom: 15px;
+  background-color: #ffffff;
+  padding: 5px;
+  border-radius: 8px;
 }
 
 .footer-col p {
-    font-size: 0.9em;
-    line-height: 1.6;
-    color: #e0f2f1;
+  font-size: 0.9em;
+  line-height: 1.6;
+  color: #e0f2f1;
 }
 
 .footer-col h3 {
-    font-size: 1.2em;
-    margin-bottom: 20px;
-    font-weight: 600;
-    color: #ffffff;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #ffffff;
 }
 
 .footer-col ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .footer-col ul li {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-col ul a {
-    text-decoration: none;
-    color: #e0f2f1;
-    transition: color 0.3s ease;
+  text-decoration: none;
+  color: #e0f2f1;
+  transition: color 0.3s ease;
 }
 
 .footer-col ul a:hover {
-    color: #ffffff;
-    text-decoration: underline;
+  color: #ffffff;
+  text-decoration: underline;
 }
 
 .ods-gallery {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 
 .ods-gallery img {
-    width: 60px;
-    height: auto;
-    border-radius: 5px;
-    transition: transform 0.3s ease;
+  width: 60px;
+  height: auto;
+  border-radius: 5px;
+  transition: transform 0.3s ease;
 }
 
 .ods-gallery img:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .footer-bottom {
-    background-color: #006666;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-    font-size: 0.8em;
+  background-color: #006666;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+  font-size: 0.8em;
 }
 
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
 
+/* --- Estilos do Blog Comunitário --- */
 
 @media (max-width: 768px) {
     .footer-container {
