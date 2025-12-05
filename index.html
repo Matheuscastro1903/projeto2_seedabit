@@ -126,6 +126,25 @@
 
         </section>
 
+        <!-- Blog comunitário -->
+        <section id="blog" class="blog-section">
+            <h1 class="h1-geral">Blog Comunitário</h1>
+            
+            <div class="blog-form-container">
+                <h3>Criar nova postagem</h3>
+                <form id="post-form">
+                    <input type="text" id="title" placeholder="Título do post" required>
+                    <input type="text" id="author" placeholder="Seu nome" required>
+                    <textarea id="content" placeholder="Conteúdo da mensagem" required></textarea>
+                    <button type="submit" class="btn-cta">Publicar</button>
+                </form>
+            </div>
+
+            <div id="blog-posts" class="posts-container">
+                </div>
+        </section>
+        <script src="js/blog.js"></script>
+
     </main>
     
     <footer class="site-footer">
@@ -139,18 +158,19 @@
             <h3>Links Rápidos</h3>
             <ul>
                 <li><a href="#">Início</a></li>
-                <li><a href="#">Sobre o Projeto</a></li>
-                <li><a href="#">Blog</a></li>
-                <li><a href="#">Contato</a></li>
+                <li><a href="#sobre_solucao">Sobre</a></li>
+                <li><a href="#ods">ODS</a></li>
+                <li><a href="#blog">Blog</a></li>
             </ul>
         </div>
 
         <div class="footer-col ods-section">
             <h3>Nós apoiamos</h3>
             <div class="ods-gallery">
-                <img src="./assets/ods13.png" alt="Ação contra a mudança global do clima">
-                <img src="./assets/ods14.png" alt="Vida na água">
-                <img src="./assets/ods15.png" alt="Vida terrestre">
+                <img src="./assets/ods_icon_1.png" alt="Agua potável e saneamento">
+                <img src="./assets/ods_icon_2.png" alt="Vida na água">
+                <img src="./assets/ods_icon_3.png" alt="Comunidades sustentáveis">
+                <img src="./assets/ods_icon_4.png" alt="Vida terrestre">
             </div>
         </div>
     </div>
