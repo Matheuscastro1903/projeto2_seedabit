@@ -32,8 +32,7 @@ A integração é feita via JavaScript (`js/blog.js`) que se comunica com a API 
 | :------------------ | :----- | :----------- | :------------------------------ |
 | **Buscar Posts**    | `GET`  | `/api/posts` | Lista todos os posts do blog.   |
 | **Criar Novo Post** | `POST` | `/api/posts` | Envia um novo post para a API.  |
-| **Delete Post**     | `POST` | `/api/posts` | Deleta um post especifico da API|
-
+| **Deletar Post**     | `DELETE` | `/api/posts/{id}` | Deleta um post especifico da API|
 
 ## 💻 Tecnologias
 
