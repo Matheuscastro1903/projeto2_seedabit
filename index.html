@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <header class="header">     
+    <header id="inicio" class="header">     
 
         <div class="logo">
             <img src="./assets/logo.png" alt="Logo do Site">
@@ -12,10 +12,10 @@
 
         <div class="nav">
             <ul>
-                <li><a href="index.html">Início</a></li>
-                <li><a href="#sobre-solucao">Sobre</a></li>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre_solucao">Sobre</a></li>
                 <li><a href="#ods">ODS</a></li>
-                <li><a href="#prototipo">Protótipo</a></li>
+                <li><a href="#">Protótipo</a></li>
                 <li><a href="blog.html">Blog</a></li>
             </ul>
         </div>
@@ -23,12 +23,72 @@
     </header>   
 
     <main>
-      <section class="banner-localixo">
-        <div class="banner-content">
-            <h1>Localixo: A solução inteligente para o descarte irregular.</h1>
-            <a href="#" class="btn-cta">
-            Conheça nossa solução &gt;
-            </a>
+        <section  class="banner-localixo">
+            <div class="banner-content">
+                <h1 >Localixo: A solução inteligente para o descarte irregular.</h1>
+                <a href="#" class="btn-cta">
+                Conheça nossa solução &gt;
+                </a>
+            </div>
+
+            <div class="pet-image">
+                <img src="./assets/pet.png" alt="Lixinho">
+            </div>
+        </section>
+    
+
+        <section id="sobre_solucao" class="sobre_solucao">
+        <div class="div-sobre">
+            <h1 class="h1-geral">Sobre a solução</h1>
+            
+
+            <div class="slideshow-container">
+
+
+                <button class="prev" type="button" onclick="plusSlides(-1)">&#10094;</button>
+                <!-- Cada bloco 'mySlides' representa uma foto individual -->
+                    
+                <div class="slides-content">
+
+                    <div class="mySlides-fade">
+                    <!-- Mostra o número do slide (1 de 3) -->
+                    <!--essa div controlará a imagem-->
+                    <!-- Imagem do slide, ocupa 100% da largura do container -->
+                        <img class="imagem-sobre" src="assets/carrosel_problema.png" >
+
+                    </div>
+
+                <!-- Segundo slide -->
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_solucao.png" ><!--essa div controlará a imagem-->
+                    </div> 
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_publico.png" ><!--essa div controlará a imagem-->
+                    </div>
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_inovacao.png" ><!--essa div controlará a imagem-->
+                    </div>
+
+                    <div class="mySlides-fade">
+                            <img class="imagem-sobre" src="assets/carrosel_fundadores.png" ><!--essa div controlará a imagem-->
+                    </div>
+                    
+            </div>
+
+                
+                    
+                        
+                    
+                        
+                    <!-- Botão para avançar um slide -->
+                    <button class="next" type="button" onclick="plusSlides(1)">&#10095;</button>
+    
+                    
+
+                <!-- Quebra de linha para separar o slideshow dos pontos (dots) -->
+                    <br>
         </div>
 
         </section>
@@ -67,6 +127,7 @@
         </section>
 
         
+
 
     </main>
     
